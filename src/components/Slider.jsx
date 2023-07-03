@@ -11,11 +11,11 @@ export default function Button({ data, setCurrentIndex }) {
 
   return (
     <>
-      <button className="btn translate-x-[0.05rem]" onClick={handlePrevClick}>
+      <button className="btn translate-x-[0.05rem]" onClick={handlePrevClick} aria-label="Previous button">
         <img src={Prev} alt="" className="max-w-[0.6rem] xl:max-w-[1rem]" />
       </button>
       <button className="btn" onClick={handleNextClick}>
-        <img src={Next} alt="" className="max-w-[0.6rem] xl:max-w-[1rem]" />
+        <img src={Next} alt="" className="max-w-[0.6rem] xl:max-w-[1rem]" aria-label="Next button" />
       </button>
     </>
   );
