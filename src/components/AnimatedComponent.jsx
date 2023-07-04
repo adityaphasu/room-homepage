@@ -4,7 +4,7 @@ const AnimatedComponent = ({ tag, variants, ...otherProps }) => {
   const MotionTag = motion[tag];
   const prefersReducedMotion = useReducedMotion();
 
-  const shouldAnimate = true ? "visible" : variants;
+  const shouldAnimate = prefersReducedMotion ? "visible" : variants;
 
   return (
     <MotionTag
