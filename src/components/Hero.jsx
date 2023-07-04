@@ -42,11 +42,13 @@ export default function Hero() {
           <p className="py-3 leading-[1.4rem] lg:pb-4 lg:pt-5">{content}</p>
         </AnimatedComponent>
 
-        <a
-          href="#"
-          className="flex items-center gap-5 pb-2.5 pt-6 font-semibold uppercase tracking-[0.8em] transition-all duration-500 hover:tracking-normal md:justify-center lg:justify-start lg:pt-0.5 xl:px-16">
-          Shop now <img src={Arrow} alt="" />
-        </a>
+        <div>
+          <a
+            href="#"
+            className="flex items-center gap-5 pb-2.5 pt-6 font-semibold uppercase tracking-[0.8em]  hover:tracking-normal md:justify-center lg:justify-start lg:pt-0.5 xl:px-16">
+            Shop now <img src={Arrow} alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );
